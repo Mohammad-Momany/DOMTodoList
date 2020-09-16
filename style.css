@@ -8,14 +8,17 @@
 }
 .card-container{
     width: 200px;
-    height: 300px;
-    
+    height: 200px;
+   
 }
+
 .card{
     width: 100%;
     height: 100%;
     transition:transform 1s ease-in-out ;
     transform-style: preserve-3d;
+    display: flex;
+    gap: 20px 5px;
 }
 .card-container:hover .card{
     transform: rotateY(180deg);
@@ -28,12 +31,12 @@
 #BUY{
     font-size: medium;
     width: 80%;
-    
-    color: rgb(19, 19, 18);
+    background: black;
+    color: blanchedalmond;
 }
 #BUY:hover{
-    background-color: black;
-    color: blanchedalmond;
+    background-color: rgb(253, 253, 253);
+    color: rgb(0, 0, 0);
 }
 
 .card figure{
@@ -42,9 +45,12 @@
     position: absolute;
     margin: 0%;
     border-radius: 40px;
+
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 .card .font{
     background: slateblue;
@@ -55,4 +61,5 @@
 .card .back{
 background: rgb(94, 16, 167);
 transform: rotateY(180deg);
+
 }
