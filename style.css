@@ -1,0 +1,58 @@
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(123, 212, 167, 0.466);
+}
+.card-container{
+    width: 200px;
+    height: 300px;
+    
+}
+.card{
+    width: 100%;
+    height: 100%;
+    transition:transform 1s ease-in-out ;
+    transform-style: preserve-3d;
+}
+.card-container:hover .card{
+    transform: rotateY(180deg);
+}
+
+.card:hover p{
+    color:rgba(7, 8, 6, 0.788);
+    transition: color .1s linear .1s;
+}
+#BUY{
+    font-size: medium;
+    width: 80%;
+    
+    color: rgb(19, 19, 18);
+}
+#BUY:hover{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.card figure{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    margin: 0%;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card .font{
+    background: slateblue;
+    color: black;
+
+}
+
+.card .back{
+background: rgb(94, 16, 167);
+transform: rotateY(180deg);
+}
