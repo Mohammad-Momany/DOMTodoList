@@ -3,87 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha512-9BwLAVqqt6oFdXohPLuNHxhx36BVj5uGSGmizkmGkgl3uMSgNalKc/smum+GJU/TTP0jy0+ruwC3xNAk3F759A==" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
-    <title>Store</title>
 </head>
 <body>
-    <div id="container">
-        <div class="card-container">
-            <div class="card"> 
-                <figure class="font">
-                    <h1>one</h1>
-                    <p>Lorem ipsum dolor sit 
-                    amet consectetur adipisicing elit. Accusamus,
-                     officiis.</p>
-                </figure>
-                <figure class="back">
-                    <h1 class="Price">PRICE: 20$</h1>
-                    <button id="BUY">BUY</button>
-
-                </figure>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card"> 
-                <figure class="font">
-                    <h1>Two</h1>
-                    <p>Lorem ipsum dolor sit 
-                    amet consectetur adipisicing elit. Accusamus,
-                     officiis.</p>
-                </figure>
-                <figure class="back">
-                    <h1 class="Price">PRICE: 20$</h1>
-                    <button id="BUY">BUY</button>
-
-                </figure>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card"> 
-                <figure class="font">
-                    <h1>Three</h1>
-                    <p>Lorem ipsum dolor sit 
-                    amet consectetur adipisicing elit. Accusamus,
-                     officiis.</p>
-                </figure>
-                <figure class="back">
-                    <h1 class="Price">PRICE: 20$</h1>
-                    <button id="BUY">BUY</button>
-
-                </figure>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card"> 
-                <figure class="font">
-                    <h1>Four</h1>
-                    <p>Lorem ipsum dolor sit 
-                    amet consectetur adipisicing elit. Accusamus,
-                     officiis.</p>
-                </figure>
-                <figure class="back">
-                    <h1 class="Price">PRICE: 20$</h1>
-                    <button class="BUY">BUY</button>
-
-                </figure>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card"> 
-                <figure class="font">
-                    <h1>five</h1>
-                    <p>Lorem ipsum dolor sit 
-                    amet consectetur adipisicing elit. Accusamus,
-                     officiis.</p>
-                </figure>
-                <figure class="back">
-                    <h1 class="Price">PRICE: 20$</h1>
-                    <button id="BUY">BUY</button>
-
-                </figure>
-            </div>
-        </div>
+    <header>
+        <h1>Todo List</h1>
+    </header>
+    <form >
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+    </form>
+    <div class="todo-contaner">
+        <ul class="todo-list"></ul>
     </div>
+
     <script src="m.js"></script>
 </body>
 </html>
