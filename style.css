@@ -1,10 +1,27 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(rgb(0, 247, 255)),
+    to(rgb(33, 29, 247))
+  );
+  background-image: -o-linear-gradient(
+    left,
+    rgb(0, 247, 255),
+    rgb(33, 29, 247)
+  );
   background-image: linear-gradient(
     to right,
     rgb(0, 247, 255),
@@ -18,7 +35,6 @@ header {
   font-size: 1.5rem;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -26,8 +42,14 @@ header {
 header,
 form {
   min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -42,6 +64,8 @@ form button {
   color: rgb(27, 77, 216);
   background: white;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 form button:hover {
@@ -50,13 +74,18 @@ form button:hover {
 }
 
 .todo-contaner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .todo-list {
-  min-width: 80%;
-  min-height: 2.5rem;
+  width: 30%;
   list-style: none;
 }
 .todo {
@@ -64,15 +93,23 @@ form button:hover {
   background: white;
   color: rgb(6, 31, 31);
   font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  height: 50px;
 }
-.todo li {
+.todo-list li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
-.trash,
 .complete {
   background: rgb(48, 231, 24);
   color: white;
@@ -82,9 +119,23 @@ form button:hover {
   font-size: 1rem;
 }
 
+.complete:hover {
+  background-color: rgb(115, 228, 100);
+}
+
 .trash {
   background: rgb(238, 0, 0);
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
 }
+
+.trash:hover {
+  background: rgb(255, 41, 41);
+}
+
 .todo-item {
   padding: 0rem 0.5rem;
 }
@@ -97,12 +148,29 @@ form button:hover {
   text-decoration: line-through;
   opacity: 0.5;
 }
-.fall {
-  transform: translateY(8rem) rotateZ(20deg);
-  opacity: 0;
-}
 
 .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+}
+
+.error {
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+  display: block;
+}
+
+.success {
+  display: none;
+}
+
+small {
+  display: none;
+}
+
+.todo-input-error {
+  border: 1px solid rgb(255, 0, 0);
 }
